@@ -73,19 +73,12 @@ Clone repository
 
 ```bash
 git clone https://github.com/eslam-moneer/military-radar-ew-simulator.git
-
 Enter folder
-
 cd military-radar-ew-simulator
-
 Install requirements
-
 pip install -r requirements.txt
-
 Run simulator
-
 streamlit run radar_simulator_pro.py
-
 Application will open at
-
 http://localhost:8501
+```
