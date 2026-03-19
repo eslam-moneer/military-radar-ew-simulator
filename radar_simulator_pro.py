@@ -234,12 +234,12 @@ with tab2:
     
     # Add frequency band markers
     bands = [
-        (0.5, 2, "VHF/UHF", "lightgray"),
-        (2, 4, "L-Band", "lightyellow"),
-        (4, 8, "S-Band", "lightblue"),
-        (8, 12, "C-Band", "lightgreen"),
-        (12, 18, "X-Band", "lightcoral"),
-        (18, 27, "Ku-Band", "lightsalmon"),
+        (1, 2, "L-Band", "lightyellow"),
+        (2, 4, "S-Band", "lightblue"),
+        (4, 8, "C-Band", "lightgreen"),
+        (8, 12, "X-Band", "lightcoral"),
+        (12, 18, "Ku-Band", "lightsalmon"),
+        (18, 27, "K-Band", "lightpink"),
     ]
     
     for start, end, label, color in bands:
