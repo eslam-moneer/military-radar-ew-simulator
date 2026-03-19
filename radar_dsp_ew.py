@@ -248,22 +248,24 @@ def generate_frequency_array(start_ghz=1, end_ghz=40, num_points=100):
     return np.linspace(start_ghz * 1e9, end_ghz * 1e9, num_points)
 
 def classify_frequency_band(frequency_hz):
-    """Classify frequency into radar band."""
+    """Classify frequency into radar band (IEEE standard)."""
     freq_ghz = frequency_hz / 1e9
-    
-    if freq_ghz < 0.5:
+
+    if freq_ghz < 0.3:
         return "VHF"
-    elif freq_ghz < 2:
+    elif freq_ghz < 1:
         return "UHF"
-    elif freq_ghz < 4:
+    elif freq_ghz < 2:
         return "L-Band"
-    elif freq_ghz < 8:
+    elif freq_ghz < 4:
         return "S-Band"
-    elif freq_ghz < 12:
+    elif freq_ghz < 8:
         return "C-Band"
-    elif freq_ghz < 18:
+    elif freq_ghz < 12:
         return "X-Band"
-    elif freq_ghz < 27:
+    elif freq_ghz < 18:
         return "Ku-Band"
+    elif freq_ghz < 27:
+        return "K-Band"
     else:
         return "Ka-Band"
